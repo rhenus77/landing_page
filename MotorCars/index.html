@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<title>Simple Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<section>
+		<!-- header start -->
+		<header>
+			<a href="#" ><img src="assets/logo5.png" class="logo"></a>
+			<!-- search bar start -->
+			<div class="wrapper">
+	            <div class="search-input">
+	                <input  type="text" placeholder="Type to search..">
+	                <div class="autocom-box">
+	                    <li>Login Form in Html & CSS</li>
+	                    <li>Login Form in Html & CSS</li>
+	                    <li>Login Form in Html & CSS</li>
+	                    <li>Login Form in Html & CSS</li>
+	                    <li>Login Form in Html & CSS</li>
+	                </div>
+	                <div class="icon"><i class="fas fa-search"></i></div>
+	            </div>
+	        </div>
+	        <!-- search bar end -->
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+			</ul>
+		</header>
+		<!-- header end -->
+		<div class="content">
+			<div class="textBox">
+				<h2>The Best For You..<br><span>Buy From You Favourite Brands</span></h2>
+				<p>Trying to chase time? Get started to find only the fastest for you.From your favourite brands right to your doorsteps.Get in touch to get other services too.</p>
+				<a href="#">Get Started</a>
+			</div>
+			<div class="imgBox">
+				<img src="assets/car4.png" class="motors">
+			</div>
+		</div>
+	</section>
+	<!-- login start -->
+	<div class="modal" id="id01">
+		<div class="form-container">
+			<h1>login form</h1>
+			<form action="#" class="modal-content animate" method="POST">	
+				<div class="item">
+					<label for="name">Username</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div class="item">
+					<label for="psw">Password</label>
+					<input type="password" name="psw" id="psw">
+				</div>
+				<span><input type="checkbox">Remember me.</span>
+				<div class="item">
+					<input type="submit" value="Login">
+				</div>
+			</form>
+			<div class="link">
+				<a href="#">Forgot password?</a>
+			</div>
+			 <div class="btns">
+			 	<button type="button" class="signupbtn" ><a href="#" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'"  style="width:auto;">Signup</a></button>
+
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+		</div>
+	</div>
+		<script>
+        // Get the modal
+	        var modal = document.getElementById('id01');
+
+	        // When the user clicks anywhere outside of the modal, close it
+	        window.onclick = function(event) {
+	            if (event.target == modal) {
+	                modal.style.display = "none";
+	            }
+	        }
+        </script>
+	<!-- login end -->
+	<!-- signup start -->
+	<div class="modal" id="id02">
+		<div class="form">
+					<h1>Sign up</h1>
+					<form action="#" class="modal-content animate" method="POST">
+						<input type="text" class="input-box" placeholder="Enter your username...">
+						<input type="email" class="input-box" placeholder="Enter your email...">
+						<input type="password" class="input-box" placeholder="Enter your password...">
+						<p><span><input type="checkbox"></span> I agree to the terms & conditions</p>
+						<button type="button" class="signup-btn">Signup</button>
+						<hr>
+						<p class="or">OR</p>
+						<button type="button" class="google-btn">Signup with google</button>	
+						<p>Do you have an account? <a href="#" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none'" style="width:auto;">Login</a></p>
+					</form>
+					<div class="btns">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelBtn">Cancel</button>
+              </div>
+		</div>
+	</div>
+	<script>
+          // Get the modal
+          var modal = document.getElementById('id02');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+	<!-- signup end -->
+	<!-- footer start -->
+	<footer class="footer">
+            <div class="footer_container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">shipping</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#">Mercedes</a></li>
+                            <li><a href="#">Toyota</a></li>
+                            <li><a href="#">Mistubishi</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	<!-- footer end -->
+	<script src="js/script.js"></script>
+	<script src="js/suggestions.js"></script>
+</body>
+</html>
